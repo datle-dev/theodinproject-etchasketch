@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="styles.css" rel="stylesheet" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <h2>Etch-a-Sketch</h2>
+    <button class="start-button">Start new canvas</button>
+    <button class="clear-button">Clear canvas</button>
+    <p class="canvas-statistics">Current grid size: 10 x 10</p>
+    <ul class="toggles">
+      <li>
+        <input type="checkbox" id="toggle-random-color" name="toggle-random-color">
+        <label for="toggle-random-color">Random Color</label>
+      </li>
+      <li>
+        <input type="checkbox" id="toggle-opacity-mode" name="toggle-opacity-mode">
+        <label for="toggle-opacity-mode">Opacity Mode</label>
+      </li>
+    </ul>
+    <div class="canvas"></div>
+    <h3>Instructions:</h3>
+    <ul>
+      <li>Hover your mouse over the canvas to paint in black</li>
+      <li>Enable "Random Color" to paint a random RGB value</li>
+      <li>
+        Enable "Opacity Mode" to paint by progressively adding opacity
+        <ul>
+          <li>For blank pixels, color (random or black) is added at 10% opacity</li>
+          <li>For existing colors, RGB is preserved and only opacity is added in 10% increments</li>
+        </ul>
+      </li>
+      <li>Click "Start new canvas" to clear and resize the canvas</li>
+      <li>Click "Clear canvas" to clear the canvas, but maintain the current grid size</li>
+    </ul>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+.canvas,
+.canvas-row,
+.canvas-pixel {
+    padding: 0;
+    margin: 0;
+}
+
+.canvas {
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 1 / 1;
+    border: 1px solid black;
+    
+}
+
+.canvas-row {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.canvas-pixel {
+    flex: 1 0 auto;
+    background-color: rgba(254, 254, 254, 1.0);
+}
+
+.toggles {
+    list-style-type: none;
+    padding: 0;
+}
